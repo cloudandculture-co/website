@@ -1,0 +1,20 @@
+.main_logo{
+	max-width: 13rem;
+}
+.navbar{
+	padding:0rem;
+}
+:root{
+	--main_blue:#00559b;
+  	--bright_blue: #56cfe2;
+}
+.menu_contact_btn{
+	background: var(--main_blue);
+}
+.menu_contact_btn:hover{
+	background:#56cfe2;
+/*	border:.1rem solid #56cfe2;;*/
+}
+.blue_btn:hover{
+	background: var(--bright_blue)!important;
+}
