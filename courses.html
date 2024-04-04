@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <title>Silicon | Software Dev Agency Landing v.1</title>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/favicon.jpg">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
+    <!-- <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"> -->
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+    <link rel="stylesheet" media="screen" href="assets/css/custom_style.css">
+    <!-- Page loading scripts -->
+    <script>
+      (function() {
+        window.onload = function() {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function() {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+  </head>
+  <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+    <div class="container px-3">
+      <a href="index.html" class="navbar-brand pe-3">
+        <img src="assets/img/logo.png" alt="cloude and culture logo" class="main_logo">
+      </a>
+      <div id="navbarNav" class="offcanvas offcanvas-end">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+              <div class="dropdown-menu">
+                <div class="d-lg-flex pt-lg-3">
+                  <div class="mega-dropdown-column">
+                    <h6 class="px-3 mb-2">Company</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li>
+                        <a href="about-v1.html" class="dropdown-item py-1">Profiles</a>
+                      </li>
+                      <li>
+                        <a href="about-v1.html" class="dropdown-item py-1">Privacy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+              <div class="dropdown-menu">
+                <div class="d-lg-flex pt-lg-3">
+                  <div class="mega-dropdown-column">
+                    <h6 class="px-3 mb-2">Cultural</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li>
+                        <a href="about-v1.html" class="dropdown-item py-1">Interpretation Planning</a>
+                      </li>
+                      <li>
+                        <a href="about-v1.html" class="dropdown-item py-1">Curatorial research</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mega-dropdown-column">
+                    <h6 class="px-3 mb-2">Cloud</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li>
+                        <a href="portfolio-grid.html" class="dropdown-item py-1">DevOps</a>
+                      </li>
+                      <li>
+                        <a href="portfolio-grid.html" class="dropdown-item py-1">Cloud Architecture</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+              <div class="dropdown-menu">
+                <div class="d-lg-flex pt-lg-3">
+                  <div class="mega-dropdown-column">
+                    <h6 class="px-3 mb-2">Cultural</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li>
+                        <a href="about-v1.html" class="dropdown-item py-1">Spatial Storyteller </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mega-dropdown-column">
+                    <h6 class="px-3 mb-2">Cloud</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li>
+                        <a href="portfolio-grid.html" class="dropdown-item py-1">Introduction to Docker</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- courses end -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Exhibitions</a>
+              <div class="dropdown-menu">
+                <div class="d-lg-flex pt-lg-3">
+                  <div class="mega-dropdown-column">
+                    <h6 class="px-3 mb-2">Cultural</h6>
+                    <ul class="list-unstyled mb-3">
+                      <li>
+                        <a href="about-v1.html" class="dropdown-item py-1">A Brexit Diary</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- Exhibitions end -->
+          </ul>
+        </div>
+        <div class="offcanvas-header border-top">
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-4 lh-1 me-1"></i> &nbsp;Buy now </a>
+        </div>
+      </div>
+      <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="contact_us.html" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex menu_contact_btn" rel="noopener">
+        <i class="bx bx-phone fs-5 lh-1 me-1"></i> &nbsp;Contact Us </a>
+    </div>
+  </header>
+  <!-- Body -->
+  <body>
+    <!-- Hero -->
+    <section class="jarallax bg-dark pt-2 pt-lg-3 pb-lg-5" data-jarallax data-speed="0.35" data-bs-theme="dark">
+      <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-70"></span>
+      <div class="jarallax-img" style="background-image: url(assets/img/course.webp);"></div>
+      <div class="container position-relative zindex-5 pb-5">
+        <!-- Breadcrumb -->
+        <nav class="py-4" aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item">
+              <a href="landing-online-courses.html">
+                <i class="bx bx-home-alt fs-lg me-1"></i>Home </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="portfolio-courses.html">Courses</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">THE SPATIAL STORYTELLER</li>
+          </ol>
+        </nav>
+        <!-- Badges -->
+        <div class="d-flex pt-3 pb-4 py-sm-4 pt-lg-5">
+          <span class="badge bg-success fs-sm me-2">Best Seller</span>
+          <a href="#" class="badge bg-white text-nav fs-sm text-decoration-none">Web Development</a>
+        </div>
+        <!-- Title -->
+        <h1>THE SPATIAL STORYTELLER</h1>
+        <p class="fs-lg text-light opacity-70">WRITING EFFECTIVE NARRATIVES FOR EXHIBITIONS</p>
+        <!-- Stats -->
+        <div class="d-sm-flex py-3 py-md-4 py-xl-5">
+          <div class="d-flex border-sm-end pe-sm-3 me-sm-3 mb-2 mb-sm-0">
+            <div class="text-nowrap me-1">
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bxs-star text-warning"></i>
+              <i class="bx bx-star text-muted opacity-75"></i>
+            </div>
+            <span class="text-light opacity-70">(1.2K reviews)</span>
+          </div>
+          <div class="d-flex border-sm-end pe-sm-3 me-sm-3 mb-2 mb-sm-0">
+            <i class="bx bx-like fs-xl text-light opacity-70 me-1"></i>
+            <span class="text-light opacity-70">4.2K likes</span>
+          </div>
+          <div class="d-flex">
+            <i class="bx bx-time fs-xl text-light opacity-70 me-1"></i>
+            <span class="text-light opacity-70">220 hours</span>
+          </div>
+        </div>
+        <!-- Author -->
+        <div class="d-flex align-items-center mt-xl-5 pt-2 pt-md-4 pt-lg-5">
+          <img src="assets/img/17.jpg" class="rounded-circle" width="60" alt="Albert Flores">
+          <div class="ps-3">
+            <div class="text-light opacity-80 mb-1">Created by</div>
+            <h6>Albert Flores</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Course description -->
+    <section class="container pt-5 mt-2 mt-lg-4 mt-xl-5">
+      <div class="row">
+        <!-- Sidebar (Course summary) -->
+        <aside class="col-lg-4 col-md-5 offset-xl-1 order-md-2 mb-5">
+          <div style="margin-top: -96px;"></div>
+          <div class="position-sticky top-0 pt-5">
+            <div class="pt-5 mt-md-3">
+              <div class="card shadow-sm p-sm-3">
+                <div class="card-body">
+                  <h4 class="mb-4">This course includes:</h4>
+                  <ul class="list-unstyled pb-3">
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="bx bx-slideshow fs-xl text-muted me-2 pe-1"></i> 220 hours on-demand video
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="bx bx-file fs-xl text-muted me-2 pe-1"></i> 18 articles
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="bx bx-download fs-xl text-muted me-2 pe-1"></i> 25 downloadable resources
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="bx bx-infinite fs-xl text-muted me-2 pe-1"></i> Full lifetime access
+                    </li>
+                    <li class="d-flex align-items-center mb-2">
+                      <i class="bx bx-trophy fs-xl text-muted me-2 pe-1"></i> Certificate of completion
+                    </li>
+                  </ul>
+                  <div class="h2 d-flex align-items-center mb-4">$28.99 <del class="text-muted fs-xl fw-normal ms-2">49.99</del>
+                  </div>
+                  <a href="#" class="btn btn-primary btn-lg shadow-primary">Join the course</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- Content -->
+        <div class="col-xl-7 col-lg-8 col-md-7 order-md-1 mb-5">
+          <h2 class="h1 pb-md-2 pb-lg-3">Course description</h2>
+          <p> The Spatial Storyteller is an interactive workshop format that teaches and practices storytelling techniques which are necessary for the development of physical and virtual exhibitions. <br> The workshop helps curators, museum specialists and students to conceptualise the process of telling stories in a physical or virtual space through the use of objects. Over the course of the workshop, participants will implement what they are learning in practice. They will develop their own online 3D interactive exhibition. <br> Telling a story within an exhibition space and through objects, requires a very different set of writing skills than other media, like essays, books or films. The term spatial storytelling describes the specific linguistic, visual and sensory techniques which are employed by museum professionals during the process of developing an exhibition. </p>
+          <!-- Video button on top of the image -->
+          <div class="position-relative bg-size-cover bg-position-center py-5" style="background-image:url(assets/img/course.webp) ">
+            <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-60"></span>
+            <div class="position-relative text-center zindex-5 px-3 py-4 py-sm-5 my-lg-5">
+              <a href="https://www.youtube.com/watch?v=kSX62MnYsoc" class="btn btn-video btn-icon bg-white btn-xl mb-2" data-bs-toggle="video" aria-label="Play video">
+                <i class="bx bx-play"></i>
+              </a>
+              <div class="fs-sm text-white opacity-75">Click me to watch video!</div>
+            </div>
+          </div>
+          <h3 class="mb-4 mt-5">What you'll learn</h3>
+          <ul class="list-unstyled mb-5">
+            <li class="d-flex align-items-center mb-2">
+              <i class="bx bx-check-circle text-primary fs-xl me-2"></i> Empower museum professionals and people working in the heritage industry.
+            </li>
+            <li class="d-flex align-items-center mb-2">
+              <i class="bx bx-check-circle text-primary fs-xl me-2"></i> Teach students, in a systematic manner, which considerations and important
+            </li>
+            <li class="d-flex align-items-center mb-2">
+              <i class="bx bx-check-circle text-primary fs-xl me-2"></i> Encourage museum professionals to take ownership of their narratives and curate their own histories and community stories.
+            </li>
+            <li class="d-flex align-items-center mb-2">
+              <i class="bx bx-check-circle text-primary fs-xl me-2"></i> Provide creatives with a structural and strategic approach towards telling a story for maximum impact..
+            </li>
+          </ul>
+          <h2 class="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">Program details</h2>
+          <div class="steps steps-sm">
+            <div class="step">
+              <div class="step-number">
+                <div class="step-number-inner">1</div>
+              </div>
+              <div class="step-body">
+                <h4 class="mb-2">Theory</h4>
+                <p class="mb-0">The theoretical part introduces useful terminology and concepts which are typically used in a professional museum setting. </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">
+                <div class="step-number-inner">2</div>
+              </div>
+              <div class="step-body">
+                <h4 class="mb-2">Concepts</h4>
+                <p class="mb-0">The lessons also introduce narrative concepts and practical ways of thinking about the mechanics of storytelling. <br> Participants will conceptualise the role interpretation plays in creating narratives </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">
+                <div class="step-number-inner">3</div>
+              </div>
+              <div class="step-body">
+                <h4 class="mb-2">Examples</h4>
+                <p class="mb-0">The course is based on real world experience of good and bad practises and highlights lessons learnt from actual cases.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">
+                <div class="step-number-inner">4</div>
+              </div>
+              <div class="step-body">
+                <h4 class="mb-2">Practice</h4>
+                <p class="mb-0">The practical part consists of exercises, using an online 3D art programme. The participants will implement what they have learnt throughout the course and build their own online exhibition. </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">
+                <div class="step-number-inner">5</div>
+              </div>
+              <div class="step-body">
+                <h4 class="mb-2">Interaction</h4>
+                <p class="mb-0">As the class proceeds, the participants will share their practical experiences, compare challenges and discuss best practices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Course author -->
+    <section class="container py-lg-4 py-xl-5 mt-3 mb-5">
+      <div class="row g-0 bg-dark bg-repeat-0 bg-position-center border rounded-3 overflow-hidden" style="background-image: url(assets/img/portfolio/courses/author-pattern.svg);">
+        <div class="col-md-5 bg-repeat-0 bg-position-top-center bg-size-cover" style="background-image: url(assets/img/author.jpg); min-height: 350px;"></div>
+        <div class="col-md-7 py-xl-5 px-4">
+          <div class="py-5 mx-auto" style="max-width: 530px;">
+            <div class="fs-xl text-light opacity-50 mb-2">Created By</div>
+            <h2 class="h1 text-light mb-4">Dr Xenia Gleissner</h2>
+            <p class="text-light opacity-70 pb-4">The Spatial Storyteller is an interactive workshop format that teaches and practices storytelling techniques which are necessary for the development of physical and virtual exhibitions. The workshop will help curators, museum specialists and students to conceptualise the process of telling stories in a physical or virtual space through the use of objects. Over the course of the workshop, participants will implement what they are learning in practice. They will develop their own online 3D interactive exhibition.</p>
+            <div class="d-flex flex-column flex-sm-row">
+              <a href="#" class="btn btn-danger me-sm-4 mb-3 mb-sm-0">
+                <i class="bx bxl-youtube fs-xl me-2"></i> 240k subscribers </a>
+              <a href="#" class="btn btn-info">
+                <i class="bx bxl-facebook-square fs-xl me-2"></i> 180k followers </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="container pb-5 mb-md-3 mb-lg-4 mb-xl-5">
+      <div class="card-body p-lg-2 text-center">
+        <h2 class="h1 ">Why participate in the workshop?</h2>
+        <p class="fs-xl opacity-70 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+      </div>
+      <div class="steps steps-horizontal-md mt-5">
+        <!-- Step -->
+        <div class="step">
+          <div class="step-number text-primary">
+            <div class="step-number-inner">
+              <i class="bx bx-search-alt fs-1"></i>
+            </div>
+          </div>
+          <div class="step-body">
+            <h5 class="mb-2">Narrative Construction</h5>
+            <p class="fs-sm mb-0">Helps curators conceptualize various narrative styles to craft engaging stories for wider audience appeal.</p>
+          </div>
+        </div>
+        <!-- Step -->
+        <div class="step">
+          <div class="step-number text-primary">
+            <div class="step-number-inner">
+              <i class="bx bx-layout fs-1"></i>
+            </div>
+          </div>
+          <div class="step-body">
+            <h5 class="mb-2">Strategic Content Creation</h5>
+            <p class="fs-sm mb-0">Teaches basic narrative techniques and online exhibition tools for reaching wider audiences.</p>
+          </div>
+        </div>
+        <!-- Step -->
+        <div class="step">
+          <div class="step-number text-primary">
+            <div class="step-number-inner">
+              <i class="bx bx-devices fs-1"></i>
+            </div>
+          </div>
+          <div class="step-body">
+            <h5 class="mb-2">International Outreach</h5>
+            <p class="fs-sm mb-0">Adapts collections to online experiences, fostering international communities and feedback.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number text-primary">
+            <div class="step-number-inner">
+              <i class="bx bx-devices fs-1"></i>
+            </div>
+          </div>
+          <div class="step-body">
+            <h5 class="mb-2">Productivity Boost</h5>
+            <p class="fs-sm mb-0">Standardizes exhibition processes, enhancing productivity and audience engagement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why end -->
+    <section class="container pb-5 mb-md-3 mb-lg-4 mb-xl-5 bg-dark p-lg-5">
+      <h2 class="h1 text-light">Goals & Objectives</h2>
+      <!-- Alternative card style: no border + shadow -->
+      <!-- Default card hover effect -->
+      <div class="row mt-4 gy-lg-0 gy-3">
+        <div class="col-12 col-md-6">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h3 class="card-title h3">Our goal</h3>
+              <p class="card-text fs-lg">Empower museum professionals and people working in the heritage industry to create compelling narratives for their museums and exhibitions, Teach students, in a systematic manner, which considerations and important steps are necessary when they curate a collection of objects for exhibition purposes <br>
+                <br>
+              </p>
+              <a href="#" class="btn btn-lg btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h3 class="card-title h3"> Our Aim </h3>
+              <p class="card-text fs-lg">Encourage museum professionals to take ownership of their narratives and curate their own histories and community stories. This is achieved using storytelling standards employed by international consultants working in the global museum sector, Provide creatives with a structural and strategic approach towards telling a story for maximum impact.</p>
+              <a href="#" class="btn btn-lg btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- goals and objective  -->
+    <!-- FAQ -->
+    <section class="container pb-5 mb-md-3 mb-lg-4 mb-xl-5">
+      <div class="row pb-3">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <div class="card bg-dark h-100 p-lg-5">
+            <div class="card-body p-lg-2">
+              <h2 class="h1 text-light">Still Have Any Questions?</h2>
+              <p class="fs-xl text-light opacity-70 mb-0">Check out the FAQs.</p>
+            </div>
+            <div class="card-footer border-0 w-100 pt-0 p-4 p-lg-2">
+              <div class="h2 d-flex align-items-center text-light mb-4">$28.99 <del class="fs-xl fw-normal opacity-70 ms-2">49.99</del>
+              </div>
+              <a href="#" class="btn btn-primary btn-lg shadow-primary">Join the course</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="accordion" id="faq">
+            <!-- Item -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button shadow-none rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#q-1" aria-expanded="true" aria-controls="q-1">YouTube is full of free tutorials, videos and courses. Why should I take courses here?</button>
+              </h3>
+              <div class="accordion-collapse collapse show" id="q-1" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-2" aria-expanded="false" aria-controls="q-2">What if I don't have any professional background?</button>
+              </h3>
+              <div class="accordion-collapse collapse" id="q-2" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-3" aria-expanded="false" aria-controls="q-3">How is this different from other courses on the market?</button>
+              </h3>
+              <div class="accordion-collapse collapse" id="q-3" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-4" aria-expanded="false" aria-controls="q-4">How much time does it take to do my homework per week? What if I don't like it?</button>
+              </h3>
+              <div class="accordion-collapse collapse" id="q-4" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="accordion-item border-0 rounded-3 shadow-sm">
+              <h3 class="accordion-header">
+                <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-5" aria-expanded="false" aria-controls="q-5">Is there any kind of certificate of completion?</button>
+              </h3>
+              <div class="accordion-collapse collapse" id="q-5" data-bs-parent="#faq">
+                <div class="accordion-body fs-sm pt-0">
+                  <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer bg-dark pt-5 pb-4 pb-lg-5" data-bs-theme="dark">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img src="assets/img/hr_logo.png" width="100" alt="Silicon">
+            </div>
+            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
+            <form class="needs-validation" novalidate>
+              <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+              <div class="input-group">
+                <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Your email" required>
+                <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row">
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                </h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Exhibitions</a>
+                    </li>
+                  </ul>
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">
+                  <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+                </h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                <h6 class="mb-2">Contact Us</h6>
+                <a href="mailto:email@example.com" class="fw-medium">email@example.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          <span class="text-light opacity-50">&copy; All rights reserved. Made by </span>
+          <a class="nav-link d-inline-block p-0" href="#" target="_blank" rel="noopener">cloude & culture</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>
