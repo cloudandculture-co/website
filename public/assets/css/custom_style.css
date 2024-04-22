@@ -1,0 +1,35 @@
+.main_logo{
+	max-width: 13rem;
+}
+.navbar{
+	padding:0rem;
+}
+:root{
+	--main_blue:#00559b;
+  	--bright_blue: #56cfe2;
+}
+.menu_contact_btn{
+	background: var(--main_blue);
+}
+.menu_contact_btn:hover{
+	background:#56cfe2;
+/*	border:.1rem solid #56cfe2;;*/
+}
+.blue_btn:hover{
+	background: var(--bright_blue)!important;
+}
+.h_100{
+	width:100%;
+	height:700px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: 100% 100%!important;
+}
+
+.slid_contents{
+	width:auto;
+	padding:3rem 4rem;
+	border-radius: 1rem;
+	background: rgba(0, 0, 0, .4);
+}

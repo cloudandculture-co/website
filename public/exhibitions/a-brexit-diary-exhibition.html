@@ -2,26 +2,25 @@
 <html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8">
-    <title>About Us</title>
+    <title>Silicon | Software Dev Agency Landing v.1</title>
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="public/assets/img/favicon.jpg">
+    <link rel="shortcut icon" href="../assets/img/favicon.jpg">
     <meta name="msapplication-TileColor" content="#080032">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!-- Vendor Styles -->
-    <link rel="stylesheet" media="screen" href="public/assets/vendor/boxicons/css/boxicons.min.css">
-    <link rel="stylesheet" media="screen" href="public/assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="../assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css">
     <!-- Main Theme Styles + Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="public/assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
-    <link rel="stylesheet" media="screen" href="public/assets/css/theme.css">
-    <link rel="stylesheet" media="screen" href="public/assets/css/custom_style.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/custom_style.css">
     <!-- Page loading scripts -->
   </head>
   <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
     <div class="container px-3">
-      <a href="public/index.html" class="navbar-brand pe-3">
-        <img src="public/assets/img/logo.png" alt="cloude and culture logo" class="main_logo">
+      <a href="../index.html" class="navbar-brand pe-3">
+        <img src="../assets/img/logo.png" alt="cloud and culture logo" class="main_logo">
       </a>
       <div id="navbarNav" class="offcanvas offcanvas-end">
         <div class="offcanvas-header border-bottom">
@@ -31,7 +30,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item ">
-              <a href="public/index.html" class="nav-link active" aria-current="page">Home</a>
+              <a href="../index.html" class="nav-link active" aria-current="page">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
@@ -134,87 +133,144 @@
         <i class="bx bx-phone fs-5 lh-1 me-1"></i> &nbsp;Contact Us </a>
     </div>
   </header>
-  </nav>
   <!-- Breadcrumb -->
-  <nav class="container py-4 my-lg-3" aria-label="breadcrumb">
+  <nav class="container py-4 mb-lg-2 mt-lg-3" aria-label="breadcrumb">
     <ol class="breadcrumb mb-0">
       <li class="breadcrumb-item">
-        <a href="public/index.html">
+        <a href="../index.html">
           <i class="bx bx-home-alt fs-lg me-1"></i>Home </a>
       </li>
-      <li class="breadcrumb-item active" aria-current="page">About Us</li>
+      <li class="breadcrumb-item">
+        <a href="portfolio-grid.html">Exhibitions</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">The Brexit Exhibition</li>
     </ol>
   </nav>
-  <!-- Page title + filters -->
-  <!-- <section class="container d-sm-flex align-items-center justify-content-between pb-4 mb-2 mb-lg-3"><h1 class="mb-sm-0 me-sm-3">Portfolio List</h1><select class="form-select" style="width: 240px;"><option value="All categories">All categories</option><option value="Web Design">Web Design</option><option value="Graphic Design">Graphic Design</option><option value="Branding">Branding</option><option value="UI / UX">UI / UX</option><option value="Motion Design">Motion Design</option></select></section> -->
-  <!-- Portfolio list -->
-  <section class="container pb-2 pb-lg-3">
-    <!-- Item -->
-    <div class="row d-flex align-items-center pb-5 mb-md-4 mb-lg-5">
-      <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
-        <a href="portfolio-single-project.html">
-          <img src="public/assets/img/egyptian_museum.jpg" class="rounded-3" width="600" alt="Image">
-        </a>
-      </div>
-      <div class="rellax col-md-6" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
-        <div class="ps-md-4 ms-md-2">
-          <div class="fs-sm text-muted mb-1">JAN 2019 – APR 2020</div>
-          <h2 class="h3">THE GRAND EGYPTIAN MUSEUM</h2>
-          <p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">Graeco-Roman Period: Faith, Kingship & Society - Interpretation & narrative development, curatorial support & design workshops, multimedia & tactile exhibit development</p>
-          <a href="portfolio-single-project.html" class="btn btn-outline-primary">View more</a>
+  <!-- Page title -->
+  <section class="container pb-4 mb-2 mb-lg-3">
+    <h1>A Brexit Diary:Personal recollections from East London</h1>
+    <p class="text-muted mb-0"> </p>
+  </section>
+  <div class="position-relative">
+    <!-- Slider prev/next buttons -->
+    <!-- Slider -->
+    <div class="px-xl-2">
+      <div class="swiper mx-n2" id="swiper_slider">
+        <div class="swiper-wrapper">
+          <!-- Item -->
+          <div class="swiper-slide h_100 pb-3" style="background:url(../assets/img/slider-1-2.jpg);">
+            <div class="slid_contents">
+              <h2 class="text-light h1 text-center"> From Poll to Protest <br> Living in the DisUnited Kingdom </h2>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="swiper-slide h_100 pb-3" style="background:url(../assets/img/slider-1-3.jpg);">
+            <div class="slid_contents">
+              <h2 class="text-light h1 text-center"> Battles for Stability: <br> Stepping into the Unknown </h2>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="swiper-slide h_100 pb-3" style="background:url(../assets/img/slider-1-1.jpg);">
+            <div class="slid_contents">
+              <h2 class="text-light h1 text-center"> A Brexit Diary: <br> Personal Recollections from East London </h2>
+            </div>
+          </div>
+          <!-- Item -->
         </div>
+        <!-- Pagination (bullets) -->
+        <div class="swiper-pagination position-relative bottom-0 mt-4 mb-lg-2"></div>
       </div>
     </div>
-    <!-- Item -->
-    <div class="row d-flex align-items-center pb-5 mb-md-4 mb-lg-5">
-      <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
-        <a href="portfolio-single-project.html" class="float-md-end">
-          <img src="public/assets/img/natural_history_kuwait.jpg" class="rounded-3" width="600" alt="Image">
-        </a>
-      </div>
-      <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
-        <div class="pe-md-4 me-md-2">
-          <div class="fs-sm text-muted mb-1">JUN 2017 – MAY 2018</div>
-          <h2 class="h3">NATURAL HISTORY MUSEUM KUWAIT</h2>
-          <p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">Ecosystems: Videos and interactives - Quality assurance for Arabic multimedia exhibits & 2D animated games</p>
-          <a href="portfolio-single-project.html" class="btn btn-outline-primary">View more</a>
+    <!-- About project -->
+    <!-- About project -->
+    <section class="container py-5 my-1 my-md-4 my-lg-5">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+            <h2 class="h1 mb-4">A Brexit Diary</h2>
+            <h4 class="h4 text-dark mb-4">Catalogs a personal journey through the Brexit Referendum.</h4>
+            <p class="fs-lg mb-2">Viewed from the perspective and experiences of two fictitious (though based on a composite of real individuals) residents of East London, this free virtual exhibition captures the highs, lows and angst following the 2016 decision by the UK to leave the EU.</p>
+            <p class="fs-lg mb-0"> The three-roomed exhibition centers around the campaign, the protests, the uncertainty of legal statuses and the general atmosphere at the time. Let "Magda" and "Dave" show you what it was like after the biggest political decision of a generation. </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-4 offset-xl-1">
+          <img src="../assets/img/about-2-2.png" class="img-fluid w-100">
         </div>
       </div>
-    </div>
-    <!-- Item -->
-    <div class="row d-flex align-items-center pb-5 mb-md-4 mb-lg-5">
-      <div class="rellax col-md-6 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
-        <a href="portfolio-single-project.html">
-          <img src="public/assets/img/the_founders_memorial.jpg" class="rounded-3" width="600" alt="Image">
-        </a>
-      </div>
-      <div class="rellax col-md-6 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
-        <div class="ps-md-4 ms-md-2">
-          <div class="fs-sm text-muted mb-1">JUL 2017 – DEC 2017</div>
-          <h2 class="h3">THE FOUNDER’S MEMORIAL </h2>
-          <a href="#" class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Motion Design</a>
-          <p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">Sheikh Zayed bin Sultan Al Nahyan Memorial - Archive photograph research & licensing, international newspaper archive research, quality assurance for Arabic content</p>
-          <a href="portfolio-single-project.html" class="btn btn-outline-primary">View more</a>
+    </section>
+    <!-- Gallery with thumbnails -->
+    <section class="container position-relative pt-1 pt-md-3">
+      <div class="row align-items-start">
+        <div class=" rellax col-lg-5 col-sm-6 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="sm">
+          <img src="../assets/img/about/gallery/01.jpg" class="rounded-3" width="526" alt="Image">
+        </div>
+        <div class="rellax col-lg-7 col-sm-6 d-sm-flex justify-content-end pt-sm-4 pt-lg-5 mt-md-3 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-1.25" data-disable-parallax-down="sm">
+          <div>
+            <img src="../assets/img/portfolio/single/03.jpg" class="rounded-3" width="416" alt="Image">
+          </div>
+        </div>
+        <div class="rellax col-lg-5 col-sm-6 d-sm-flex justify-content-lg-end pt-sm-5 mt-lg-5 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-1.25" data-disable-parallax-down="sm">
+          <div>
+            <img src="../assets/img/portfolio/single/04.jpg" class="rounded-3" width="416" alt="Image">
+          </div>
+        </div>
+        <div class="rellax col-lg-7 col-sm-6 d-sm-flex justify-content-center mt-sm-n5 mb-4 mb-sm-0" data-rellax-percentage="0.5" data-rellax-speed="-0.25" data-disable-parallax-down="sm">
+          <div>
+            <img src="../assets/img/portfolio/single/05.jpg" class="d-block rounded-3 mt-xl-n5" width="526" alt="Image">
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Item -->
-    <div class="row pb-5 mb-md-4 mb-lg-5">
-      <div class="rellax col-md-6 order-md-2 pb-1 mb-3 pb-md-0 mb-md-0" data-rellax-percentage="0.5" data-rellax-speed="0.8" data-disable-parallax-down="md">
-        <a href="portfolio-single-project.html" class="float-md-end">
-          <img src="public/assets/img/memories_of_journey.jpg" class="rounded-3" width="600" alt="Image">
-        </a>
-      </div>
-      <div class="rellax col-md-6 order-md-1 pt-md-4 pt-lg-5" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="md">
-        <div class="pe-md-4 me-md-2">
-          <div class="fs-sm text-muted mb-1">MAR 2016 – AUG 2017</div>
-          <h2 class="h3">MEMORIES OF A JOURNEY</h2>
-          <a href="#" class="d-table badge bg-faded-primary text-primary fs-sm mb-3">Web Design</a>
-          <p class="d-md-none d-lg-block pb-3 mb-2 mb-md-3">Hajj from around the World: Pilgrim Routes from the Middle Ages until the Steamboat Era - Narrative development, object research & assessment, design briefs</p>
-          <a href="portfolio-single-project.html" class="btn btn-outline-primary">View more</a>
+      <div class="row position-sm-absolute top-50 start-0 translate-middle-sm-y w-100 d-flex mt-md-n5">
+        <div class="rellax col-lg-5 col-sm-6 offset-sm-3 offset-lg-4 mt-sm-n5" data-rellax-percentage="0.5" data-rellax-speed="1.4" data-disable-parallax-down="sm">
+          <img src="../assets/img/portfolio/single/02.jpg" class="d-block rounded-3 mt-xl-n5" width="526" alt="Image">
         </div>
       </div>
-    </div>
+    </section>
+    <!-- Related projects (Carousel on narrow screens) -->
+    <section class="container py-5 mt-2 mt-md-4 mt-lg-5 mb-xl-2">
+      <h2 class="h1 text-center pt-2 pt-md-3 pb-4 mb-2 mb-lg-3">Virtual Exhibition Rooms (Free to View)</h2>
+      <div class="row mt-4">
+        <div class="col-12 col-md-4">
+          <div class="card card-portfolio">
+            <div class="card-img">
+              <img src="../assets/img/collections-3-1.jpg" alt="Image">
+            </div>
+            <div class="card-body">
+              <p class="fs-md mb-0">Pre-referendum posturing</p>
+              <h3 class="h4 mb-2">
+                <a href="../../room_one.html" class="stretched-link">Personal experiences of the campaigns, the leaflets, the bias and division</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card card-portfolio">
+            <div class="card-img">
+              <img src="../assets/img/collections-3-2.jpg" alt="Image">
+            </div>
+            <div class="card-body">
+              <p class="fs-md mb-0">Elections, protests and stalemate</p>
+              <h3 class="h4 mb-2">
+                <a href="portfolio-single-project.html" class="stretched-link">A glimpse of living with continued division, endless deal making and anxiety over personal futures</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card card-portfolio">
+            <div class="card-img">
+              <img src="../assets/img/collections-3-3.jpg" alt="Image">
+            </div>
+            <div class="card-body">
+              <p class="fs-md mb-0"> That's it, we're out </p>
+              <h3 class="h4 mb-2">
+                <a href="portfolio-single-project.html" class="stretched-link">Life after Brexit, dealing with the transition, applying for residency and trying to move ons</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
   </section>
   <!-- Footer -->
   <footer class="footer bg-dark pt-5 pb-4 pb-lg-5" data-bs-theme="dark">
@@ -222,7 +278,7 @@
       <div class="row pb-5">
         <div class="col-lg-4 col-md-6">
           <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
-            <img src="public/assets/img/hr_logo.png" width="100" alt="Silicon">
+            <img src="../assets/img/hr_logo.png" width="100" alt="Silicon">
           </div>
           <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
           <form class="needs-validation" novalidate>
@@ -309,8 +365,51 @@
     <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
   </a>
   <!-- Vendor Scripts -->
-  <script src="public/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- Main Theme Script -->
-  <script src="public/assets/js/theme.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script>
+    // Wait for the DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Swiper
+      var mySwiper = new Swiper('#swiper_slider', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+          delay: 2000, // Autoplay delay in milliseconds
+        },
+        // If you have navigation buttons
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        // If you have pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          // When window width is <= 576px
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // When window width is <= 768px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // When window width is <= 992px
+          992: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        },
+      });
+    });
+  </script>
   </body>
 </html>
