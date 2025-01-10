@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
-  <head>
+<head>
     <meta charset="utf-8">
 
     <title>Cloud and Culture | Cultural Stories Told on a Digital Stage</title>
@@ -18,72 +18,114 @@
     <link rel="stylesheet" media="screen" href="assets/css/custom_style.css">
     <!-- Page loading scripts -->
     <script>
-      (function() {
-        window.onload = function() {
-          const preloader = document.querySelector('.page-loading');
-          preloader.classList.remove('active');
-          setTimeout(function() {
-            preloader.remove();
-          }, 1000);
-        };
-      })();
+        (function() {
+          window.onload = function() {
+            const preloader = document.querySelector('.page-loading');
+            preloader.classList.remove('active');
+            setTimeout(function() {
+              preloader.remove();
+            }, 1000);
+          };
+        })();
     </script>
-  </head>
-  <!-- Body -->
-  <body>
-    <!-- Page loading spinner -->
-    <div class="page-loading active">
-      <div class="page-loading-inner">
+</head>
+<!-- Body -->
+<body>
+<!-- Page loading spinner -->
+<div class="page-loading active">
+    <div class="page-loading-inner">
         <div class="page-spinner"></div>
         <span>Loading...</span>
-      </div>
     </div>
-    <!-- Page wrapper for sticky footer -->
-    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
-    <main class="page-wrapper">
-      <!-- Navbar -->
-      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
-      <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+</div>
+<!-- Page wrapper for sticky footer -->
+<!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+<main class="page-wrapper">
+    <!-- Navbar -->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+    <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
         <div class="container px-3">
-          <a href="index.html" class="navbar-brand pe-3">
-            <img src="assets/img/logo.png" alt="cloud and culture logo" class="main_logo">
-          </a>
-          <div id="navbarNav" class="offcanvas offcanvas-end">
-            <div class="offcanvas-header border-bottom">
-              <h5 class="offcanvas-title">Menu</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <a href="index.html" class="navbar-brand pe-3">
+                <img src="assets/img/logo.png" alt="cloud and culture logo" class="main_logo">
+            </a>
+            <div id="navbarNav" class="offcanvas offcanvas-end">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item ">
+                        <a href="#" class="nav-link "
+                           aria-current="page">Landings</a>
+                      </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+                               aria-current="page">Apps</a>
+                            <div class="dropdown-menu p-0">
+                                <div class="d-lg-flex">
+                                    <div class="mega-dropdown-column d-flex justify-content-center align-items-center rounded-3 rounded-end-0 px-0"
+                                         style="margin: -1px; background-color: #f3f6ff;">
+                                        <img src="assets/img/landings.jpg" alt="Landings">
+                                    </div>
+                                    <div class="mega-dropdown-column pt-lg-3 pb-lg-4"
+                                         style="--si-mega-dropdown-column-width: 15rem;">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="./apps/pocket-museum.html" class="dropdown-item">Template Intro Page</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+                           aria-current="page">Exhibitions</a>
+                        <div class="dropdown-menu p-0">
+                          <div class="d-lg-flex">
+                            <div class="mega-dropdown-column d-flex justify-content-center align-items-center rounded-3 rounded-end-0 px-0"
+                                 style="margin: -1px; background-color: #f3f6ff;">
+                              <img src="assets/img/landings.jpg" alt="Landings">
+                            </div>
+                            <div class="mega-dropdown-column pt-lg-3 pb-lg-4"
+                                 style="--si-mega-dropdown-column-width: 15rem;">
+                              <ul class="list-unstyled mb-0">
+                                <li><a href="index.html" class="dropdown-item">Template Intro Page</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+                <div class="offcanvas-header border-top">
+                    <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/"
+                       class="btn btn-primary w-100" target="_blank" rel="noopener">
+                        <i class="bx bx-cart fs-4 lh-1 me-1"></i> &nbsp;Buy now </a>
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item ">
-                  <a href="index.html" class="nav-link active" aria-current="page">Home</a>
-                </li>
-              </ul>
-            </div>
-            <div class="offcanvas-header border-top">
-              <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
-                <i class="bx bx-cart fs-4 lh-1 me-1"></i> &nbsp;Buy now </a>
-            </div>
-          </div>
         </div>
-      </header>
-      <!-- Hero slider + BG parallax -->
-      <section class="jarallax bg-dark py-xxl-5" data-jarallax data-speed="0.4" data-bs-theme="dark">
+    </header>
+    <!-- Hero slider + BG parallax -->
+    <section class="jarallax bg-dark py-xxl-5" data-jarallax data-speed="0.4" data-bs-theme="dark">
         <span class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-translucent"></span>
         <div class="jarallax-img" style="background-image: url(assets/img/hero-bg.jpg);"></div>
         <div class="position-relative text-center zindex-5 overflow-hidden pt-4 py-md-5">
-          <!-- Slider controls (Prev / next) -->
-          <button type="button" id="hero-prev" class="btn btn-prev btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex ms-n3 ms-lg-2" aria-label="Previous">
-            <i class="bx bx-chevron-left fs-1"></i>
-          </button>
-          <button type="button" id="hero-next" class="btn btn-next btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y d-none d-md-inline-flex me-n3 me-lg-2" aria-label="Next">
-            <i class="bx bx-chevron-right fs-1"></i>
-          </button>
-          <!-- Slider -->
-          <div class="container text-center py-xl-5">
-            <div class="row justify-content-center pt-lg-5">
-              <div class="col-xl-8 col-lg-9 col-md-10 col-11">
-                <div class="swiper pt-5 pb-4 py-md-5" data-swiper-options='{
+            <!-- Slider controls (Prev / next) -->
+            <button type="button" id="hero-prev"
+                    class="btn btn-prev btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 start-0 translate-middle-y d-none d-md-inline-flex ms-n3 ms-lg-2"
+                    aria-label="Previous">
+                <i class="bx bx-chevron-left fs-1"></i>
+            </button>
+            <button type="button" id="hero-next"
+                    class="btn btn-next btn-icon btn-xl bg-transparent shadow-none position-absolute top-50 end-0 translate-middle-y d-none d-md-inline-flex me-n3 me-lg-2"
+                    aria-label="Next">
+                <i class="bx bx-chevron-right fs-1"></i>
+            </button>
+            <!-- Slider -->
+            <div class="container text-center py-xl-5">
+                <div class="row justify-content-center pt-lg-5">
+                    <div class="col-xl-8 col-lg-9 col-md-10 col-11">
+                        <div class="swiper pt-5 pb-4 py-md-5" data-swiper-options='{
                   "effect": "fade",
                   "speed": 500,
                   "autoplay": {
@@ -99,222 +141,263 @@
                     "nextEl": "#hero-next"
                   }
                 }'>
-                  <div class="swiper-wrapper">
-                    <!-- Item -->
-                    <div class="swiper-slide">
-                      <h2 class="display-2 from-start mb-lg-4">The Human Storybook Brought To Life Using The Cloud and AI</h2>
-                      <div class="from-end">
-                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We help museums, cultural institutions and design
-                          companies leverage cloud and AI technologies.</p>
-                      </div>
-<!--                      <div class="scale-up delay-1">-->
-<!--                        <a href="#" class="btn btn-primary  btn-lg">Start your project</a>-->
-<!--                      </div>-->
+                            <div class="swiper-wrapper">
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <h2 class="display-2 from-start mb-lg-4">The Human Storybook Brought To Life Using
+                                        The Cloud and AI</h2>
+                                    <div class="from-end">
+                                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We help museums, cultural
+                                            institutions and design
+                                            companies leverage cloud and AI technologies.</p>
+                                    </div>
+                                    <!--                      <div class="scale-up delay-1">-->
+                                    <!--                        <a href="#" class="btn btn-primary  btn-lg">Start your project</a>-->
+                                    <!--                      </div>-->
+                                </div>
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <h2 class="display-2 from-start mb-lg-4">Cultural Stories Told On A Digital
+                                        Stage</h2>
+                                    <div class="from-end">
+                                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We build desktop and mobile
+                                            applications for the cultural sector.</p>
+                                    </div>
+                                    <!--                      <div class="scale-up delay-1">-->
+                                    <!--                        <a href="#" class="btn btn-primary shadow-primary btn-lg">View case studies</a>-->
+                                    <!--                      </div>-->
+                                </div>
+                                <!-- Item -->
+                                <div class="swiper-slide">
+                                    <h2 class="display-2 from-start mb-lg-4">Interpretation, Anthropological Research &
+                                        Training</h2>
+                                    <div class="from-end">
+                                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We conduct anthropological
+                                            research, interview and provide training on the storytelling process. </p>
+                                    </div>
+                                    <!--                      <div class="scale-up delay-1">-->
+                                    <!--                        <a href="#" class="btn btn-primary shadow-primary btn-lg menu_contact_btn">Work with us</a>-->
+                                    <!--                      </div>-->
+                                </div>
+                            </div>
+                            <!-- Pagination (bullets) -->
+                            <div class="swiper-pagination position-relative d-md-none pt-2 mt-5"></div>
+                        </div>
                     </div>
-                    <!-- Item -->
-                    <div class="swiper-slide">
-                      <h2 class="display-2 from-start mb-lg-4">Cultural Stories Told On A Digital Stage</h2>
-                      <div class="from-end">
-                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We build desktop and mobile applications for the cultural sector.</p>
-                      </div>
-<!--                      <div class="scale-up delay-1">-->
-<!--                        <a href="#" class="btn btn-primary shadow-primary btn-lg">View case studies</a>-->
-<!--                      </div>-->
-                    </div>
-                    <!-- Item -->
-                    <div class="swiper-slide">
-                      <h2 class="display-2 from-start mb-lg-4">Interpretation, Anthropological Research & Training</h2>
-                      <div class="from-end">
-                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We conduct anthropological research, interview and provide training on the storytelling process. </p>
-                      </div>
-<!--                      <div class="scale-up delay-1">-->
-<!--                        <a href="#" class="btn btn-primary shadow-primary btn-lg menu_contact_btn">Work with us</a>-->
-<!--                      </div>-->
-                    </div>
-                  </div>
-                  <!-- Pagination (bullets) -->
-                  <div class="swiper-pagination position-relative d-md-none pt-2 mt-5"></div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
-      <!-- About -->
-      <section class="container pt-5 mt-2 mt-md-4 mt-lg-5">
+    </section>
+    <!-- About -->
+    <section class="container pt-5 mt-2 mt-md-4 mt-lg-5">
         <div class="row pt-xl-3">
-          <div class="col-md-5 text-center text-md-start pb-5">
-            <h1 class="mb-4">We are digital storytellers</h1>
-            <p class="fs-lg pb-lg-3 mb-4">We use software, cloud and AI technologies to bring cultural projects into the future. We create apps that help museums bring their narratives to a global audience. Our analytics tools help you understand your audiences and visitors.</p><p class="fs-lg pb-lg-3 mb-4">
-            Our combined experience, gained over decades in the culture and technology sectors, can help you leverage Cloud, AI and Extended Reality(XR) in your industry.
-          </p>
-            <a href="about-v2.html" class="btn btn-primary shadow-primary btn-lg blue_btn">More About Us</a>
-<!--            <div class="mt-3 mt-sm-0 pt-4 pt-sm-5 mt-xl-4">-->
-<!--              <h2 class="h6 mb-4">Some of our awards:</h2>-->
-<!--              <img src="assets/img/awards.svg" alt="Awards">-->
-<!--            </div>-->
-          </div>
-          <div class="col-xl-6 col-md-7 offset-xl-1 pb-4 pb-sm-3 pb-lg-0 mb-4 mb-sm-5 mb-lg-0">
-            <img src="assets/img/about-img.jpg" class="rounded-3 shadow-sm" alt="Image" height="400">
-          </div>
+            <div class="col-md-5 text-center text-md-start pb-5">
+                <h1 class="mb-4">We are digital storytellers</h1>
+                <p class="fs-lg pb-lg-3 mb-4">We use software, cloud and AI technologies to bring cultural projects into
+                    the future. We create apps that help museums bring their narratives to a global audience. Our
+                    analytics tools help you understand your audiences and visitors.</p>
+                <p class="fs-lg pb-lg-3 mb-4">
+                    Our combined experience, gained over decades in the culture and technology sectors, can help you
+                    leverage Cloud, AI and Extended Reality(XR) in your industry.
+                </p>
+                <a href="about-v2.html" class="btn btn-primary shadow-primary btn-lg blue_btn">More About Us</a>
+                <!--            <div class="mt-3 mt-sm-0 pt-4 pt-sm-5 mt-xl-4">-->
+                <!--              <h2 class="h6 mb-4">Some of our awards:</h2>-->
+                <!--              <img src="assets/img/awards.svg" alt="Awards">-->
+                <!--            </div>-->
+            </div>
+            <div class="col-xl-6 col-md-7 offset-xl-1 pb-4 pb-sm-3 pb-lg-0 mb-4 mb-sm-5 mb-lg-0">
+                <img src="assets/img/about-img.jpg" class="rounded-3 shadow-sm" alt="Image" height="400">
+            </div>
         </div>
-      </section>
-      <!-- Services -->
-      <section class="bg-secondary pb-md-2 pb-lg-5">
+    </section>
+    <!-- Services -->
+    <section class="bg-secondary pb-md-2 pb-lg-5">
         <div class="d-none d-lg-block" style="margin-top: -60px; padding-top: 60px;"></div>
         <div class="container pb-4 pt-5">
-          <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">Our Services</h2>
-          <div class="row align-items-center pb-5 mb-lg-2">
-            <div class="col-md-8 text-center text-md-start">
-              <p class="fs-lg text-muted mb-md-0">We are focused on helping our clients use of the next generation of Cloud, AI and Extended Reality products and platforms.</p>
-            </div>
-<!--            <div class="col-md-4 d-flex justify-content-center justify-content-md-end">-->
-<!--              <a href="services-v1.html" class="btn btn-outline-primary btn-lg">See all services</a>-->
-<!--            </div>-->
-          </div>
-          <div class="row row-cols-1 row-cols-md-2">
-            <!-- Item -->
-            <div class="col py-4 my-2 my-sm-3">
-              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 me-xl-2">
-                <div class="card-body pt-3">
-                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                    <img src="assets/img/services/icons/cms.svg" class="d-block m-1" width="40" alt="Icon">
-                  </div>
-                  <h2 class="h4 d-inline-flex align-items-center"> Interpretation planning, curatorial research
-<!--                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>-->
-                  </h2>
-                  <p class="fs-sm text-body mb-0">We help cultural clients build narratives, key messages and define visitor outcomes.
-                    We utilize objects, locations, human stories and individuals to
-                    construct engaging thought-provoking and entertaining exhibitions. </p>
+            <h2 class="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">Our Services</h2>
+            <div class="row align-items-center pb-5 mb-lg-2">
+                <div class="col-md-8 text-center text-md-start">
+                    <p class="fs-lg text-muted mb-md-0">We are focused on helping our clients use of the next generation
+                        of Cloud, AI and Extended Reality products and platforms.</p>
                 </div>
-              </a>
+                <!--            <div class="col-md-4 d-flex justify-content-center justify-content-md-end">-->
+                <!--              <a href="services-v1.html" class="btn btn-outline-primary btn-lg">See all services</a>-->
+                <!--            </div>-->
             </div>
-            <!-- Item -->
-            <div class="col py-4 my-2 my-sm-3">
-              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
-                <div class="card-body pt-3">
-                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                    <img src="assets/img/services/icons/rocket.svg" class="d-block m-1" width="40" alt="Icon">
-                  </div>
-                  <h2 class="h4 d-inline-flex align-items-center"> Software development and storytelling using Virtual Platforms
-<!--                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>-->
-                  </h2>
-                  <p class="fs-sm text-body mb-0">We create online tools and apps that help you produce and distribute
-                    virtual exhibitions and extended reality media content.
-                    We want you to reach hundreds of thousands of virtual users and visitors from around the globe, whether they physically visit your site or not.</p>
+            <div class="row row-cols-1 row-cols-md-2">
+                <!-- Item -->
+                <div class="col py-4 my-2 my-sm-3">
+                    <a href="services-single-v1.html"
+                       class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 me-xl-2">
+                        <div class="card-body pt-3">
+                            <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                                <img src="assets/img/services/icons/cms.svg" class="d-block m-1" width="40" alt="Icon">
+                            </div>
+                            <h2 class="h4 d-inline-flex align-items-center"> Interpretation planning, curatorial
+                                research
+                                <!--                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>-->
+                            </h2>
+                            <p class="fs-sm text-body mb-0">We help cultural clients build narratives, key messages and
+                                define visitor outcomes.
+                                We utilize objects, locations, human stories and individuals to
+                                construct engaging thought-provoking and entertaining exhibitions. </p>
+                        </div>
+                    </a>
                 </div>
-              </a>
-            </div>
-            <!-- Item -->
-            <div class="col py-4 my-2 my-sm-3">
-              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
-                <div class="card-body pt-3">
-                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                    <img src="assets/img/services/icons/mobile-app.svg" class="d-block m-1" width="40" alt="Icon">
-                  </div>
-                  <h2 class="h4 d-inline-flex align-items-center"> Productivity and Asset Management Apps
-<!--                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>-->
-                  </h2>
-                  <p class="fs-sm text-body mb-0">Our apps help you lend, track and monitor the repository of cultural assets that you own. Our intelligent catalog
-                  system helps you locate your objects and prepare for their conservation and display.</p>
+                <!-- Item -->
+                <div class="col py-4 my-2 my-sm-3">
+                    <a href="services-single-v1.html"
+                       class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                        <div class="card-body pt-3">
+                            <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                                <img src="assets/img/services/icons/rocket.svg" class="d-block m-1" width="40"
+                                     alt="Icon">
+                            </div>
+                            <h2 class="h4 d-inline-flex align-items-center"> Software development and storytelling using
+                                Virtual Platforms
+                                <!--                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>-->
+                            </h2>
+                            <p class="fs-sm text-body mb-0">We create online tools and apps that help you produce and
+                                distribute
+                                virtual exhibitions and extended reality media content.
+                                We want you to reach hundreds of thousands of virtual users and visitors from around the
+                                globe, whether they physically visit your site or not.</p>
+                        </div>
+                    </a>
                 </div>
-              </a>
-            </div>
-            <!-- Item -->
-            <div class="col py-4 my-2 my-sm-3">
-              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
-                <div class="card-body pt-3">
-                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                    <img src="assets/img/services/icons/analytics.svg" class="d-block m-1" width="40" alt="Icon">
-                  </div>
-                  <h2 class="h4 d-inline-flex align-items-center"> Audience Research Analytics <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
-                  </h2>
-                  <p class="fs-sm text-body mb-0">Our bespoke audience research tools help you better understand your visitors
-                    and how they engage with your museum, cultural or heritage site.
-                    This includes segmentation of users  based on geography, interests, age demographics and other key factors that will enable you to create targeted content for your audiences.</p>
+                <!-- Item -->
+                <div class="col py-4 my-2 my-sm-3">
+                    <a href="services-single-v1.html"
+                       class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                        <div class="card-body pt-3">
+                            <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                                <img src="assets/img/services/icons/mobile-app.svg" class="d-block m-1" width="40"
+                                     alt="Icon">
+                            </div>
+                            <h2 class="h4 d-inline-flex align-items-center"> Productivity and Asset Management Apps
+                                <!--                    <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>-->
+                            </h2>
+                            <p class="fs-sm text-body mb-0">Our apps help you lend, track and monitor the repository of
+                                cultural assets that you own. Our intelligent catalog
+                                system helps you locate your objects and prepare for their conservation and display.</p>
+                        </div>
+                    </a>
                 </div>
-              </a>
-            </div>
-            <!-- Item -->
-            <div class="col py-4 my-2 my-sm-3">
-              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
-                <div class="card-body pt-3">
-                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                    <img src="assets/img/services/icons/web-search.svg" class="d-block m-1" width="40" alt="Icon">
-                  </div>
-                  <h2 class="h4 d-inline-flex align-items-center"> Cloud Architecture and DevOps <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
-                  </h2>
-                  <p class="fs-sm text-body mb-0">We will build, develop and test an entire cloud stack for you.
-                    This includes automated delivery of your software and applications, with monitoring capabilities and real time actioning.</p>
+                <!-- Item -->
+                <div class="col py-4 my-2 my-sm-3">
+                    <a href="services-single-v1.html"
+                       class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                        <div class="card-body pt-3">
+                            <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                                <img src="assets/img/services/icons/analytics.svg" class="d-block m-1" width="40"
+                                     alt="Icon">
+                            </div>
+                            <h2 class="h4 d-inline-flex align-items-center"> Audience Research Analytics <i
+                                    class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                            </h2>
+                            <p class="fs-sm text-body mb-0">Our bespoke audience research tools help you better
+                                understand your visitors
+                                and how they engage with your museum, cultural or heritage site.
+                                This includes segmentation of users based on geography, interests, age demographics and
+                                other key factors that will enable you to create targeted content for your
+                                audiences.</p>
+                        </div>
+                    </a>
                 </div>
-              </a>
-            </div>
-            <!-- Item -->
-            <div class="col py-4 my-2 my-sm-3">
-              <a href="services-single-v1.html" class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
-                <div class="card-body pt-3">
-                  <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                    <img src="assets/img/services/icons/timer.svg" class="d-block m-1" width="40" alt="Icon">
-                  </div>
-                  <h2 class="h4 d-inline-flex align-items-center"> Strategic Project Management <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
-                  </h2>
-                  <p class="fs-sm text-body mb-0">Using our collective decades of experience, we can help you structure,
-                    define and track your cultural or cloud project using best-in-class software and agile tools. We can provide you with a tailored programme to help you with strategic approach to leverage cloud, AI and XR technologies</p>
+                <!-- Item -->
+                <div class="col py-4 my-2 my-sm-3">
+                    <a href="services-single-v1.html"
+                       class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                        <div class="card-body pt-3">
+                            <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                                <img src="assets/img/services/icons/web-search.svg" class="d-block m-1" width="40"
+                                     alt="Icon">
+                            </div>
+                            <h2 class="h4 d-inline-flex align-items-center"> Cloud Architecture and DevOps <i
+                                    class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                            </h2>
+                            <p class="fs-sm text-body mb-0">We will build, develop and test an entire cloud stack for
+                                you.
+                                This includes automated delivery of your software and applications, with monitoring
+                                capabilities and real time actioning.</p>
+                        </div>
+                    </a>
                 </div>
-              </a>
+                <!-- Item -->
+                <div class="col py-4 my-2 my-sm-3">
+                    <a href="services-single-v1.html"
+                       class="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3 ms-xl-2">
+                        <div class="card-body pt-3">
+                            <div class="d-inline-block bg-primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                                <img src="assets/img/services/icons/timer.svg" class="d-block m-1" width="40"
+                                     alt="Icon">
+                            </div>
+                            <h2 class="h4 d-inline-flex align-items-center"> Strategic Project Management <i
+                                    class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
+                            </h2>
+                            <p class="fs-sm text-body mb-0">Using our collective decades of experience, we can help you
+                                structure,
+                                define and track your cultural or cloud project using best-in-class software and agile
+                                tools. We can provide you with a tailored programme to help you with strategic approach
+                                to leverage cloud, AI and XR technologies</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-    </main>
-    <!-- Footer -->
-    <footer class="footer bg-dark pt-5 pb-4 pb-lg-5" data-bs-theme="dark">
-      <div class="container pt-lg-4">
+</main>
+<!-- Footer -->
+<footer class="footer bg-dark pt-5 pb-4 pb-lg-5" data-bs-theme="dark">
+    <div class="container pt-lg-4">
         <div class="row pb-5">
-          <div class="col-lg-4 col-md-6">
-            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
-              <img src="assets/img/hr_logo.png" width="300" alt="Silicon">
-            </div>
-            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Cloud and Culture is a limited company registered in England and Wales. Registered number: 1234567. Registered office: 7 Bell Yard, London, WC2A 2JR </p>
-          </div>
-          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
-            <div id="footer-links" class="row">
-              <div class="col-lg-4">
-                <h6 class="mb-2">
-                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
-                </h6>
-                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
-                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a>
-                    </li>
-                  </ul>
-                  <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a>
-                    </li>
-                  </ul>
+            <div class="col-lg-4 col-md-6">
+                <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+                    <img src="assets/img/hr_logo.png" width="300" alt="Silicon">
                 </div>
-              </div>
-              </div>
+                <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Cloud and Culture is a limited company registered in
+                    England and Wales. Registered number: 1234567. Registered office: 7 Bell Yard, London, WC2A 2JR </p>
             </div>
-          </div>
+            <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+                <div id="footer-links" class="row">
+                    <div class="col-lg-4">
+                        <h6 class="mb-2">
+                            <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                               data-bs-toggle="collapse">Useful Links</a>
+                        </h6>
+                        <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
-          <span class="text-light opacity-50">&copy; 2024 All rights reserved. Made by </span>
-          <a class="nav-link d-inline-block p-0" href="#" target="_blank" rel="noopener">Cloud & Culture</a>
-        </p>
-      </div>
-    </footer>
-    <!-- Back to top button -->
-    <a href="#top" class="btn-scroll-top" data-scroll>
-      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
-      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
-    </a>
-    <!-- Vendor Scripts -->
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <!-- Main Theme Script -->
-    <script src="assets/js/theme.js"></script>
-  </body>
+    </div>
+    <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+        <span class="text-light opacity-50">&copy; 2024 All rights reserved. Made by </span>
+        <a class="nav-link d-inline-block p-0" href="#" target="_blank" rel="noopener">Cloud & Culture</a>
+    </p>
+    </div>
+</footer>
+<!-- Back to top button -->
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+<!-- Vendor Scripts -->
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<!-- Main Theme Script -->
+<script src="assets/js/theme.js"></script>
+</body>
 </html>
